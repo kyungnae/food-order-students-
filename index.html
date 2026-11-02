@@ -1,5 +1,10 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>음식 주문 수행평가</title>
-<meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;700&family=Gowun+Dodum&display=swap" rel="stylesheet">
@@ -321,7 +326,155 @@ button.ptx.played .pz{color:var(--jade)}
 #gs,#sd{width:100%;max-width:260px;display:block;margin:0 auto}
 .results li.other{opacity:.6}
 .results li.other .zh{font-size:1rem}
+
+/* ---- 휴대폰 세로: 위아래 여백 줄이기 ---- */
+@media (max-width:600px){
+  body{font-size:16px}
+  .wrap{padding-block:8px 24px;padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px))}
+  header{margin:2px 2px 8px}
+  header h1{font-size:1.1rem}
+  .track{margin-bottom:10px;gap:4px}
+  .track button{padding-top:4px;font-size:.75rem}
+  .panel{padding:14px 14px;border-radius:14px}
+  .panel.tall{min-height:calc(100svh - 110px)}
+  .lead{margin:0 0 10px;font-size:.9rem;line-height:1.5}
+  .mean{font-size:1.15rem;margin:2px 0 10px}
+  .bar{margin-bottom:10px}
+  .sitbar{padding:6px 10px;margin:0 0 10px;font-size:.85rem;gap:4px 8px}
+  .sits{gap:8px;margin-bottom:10px}
+  .slip{padding:10px 6px;gap:1px}
+  .slip .price{font-size:1.15rem}
+  .tools{margin:6px 0 10px;gap:6px}
+  .say{padding:5px 12px;font-size:.85rem}
+  .dlg2{gap:6px;margin-bottom:12px}
+  .ln{padding:8px 10px}
+  .ln .zh{font-size:1.1rem}
+  .ln .p,.ln .k{font-size:.85rem}
+  .keys{gap:4px;margin-bottom:12px}
+  .keys li{padding:6px 10px}
+  .q-kr{font-size:1.3rem;margin:10px 0 8px}
+  .opts{gap:8px}
+  .opt{padding:10px 12px;font-size:1rem}
+  .opt.hzopt{font-size:1.05rem}
+  .afterbox{margin-top:10px;padding:10px}
+  .btn{padding:10px 16px;font-size:.95rem}
+  .scene{margin:4px 0 10px}
+  .scene .kr{font-size:1.15rem}
+  .slots{min-height:60px;padding:8px;margin-bottom:10px}
+  .pool{min-height:48px;margin-bottom:10px;gap:6px}
+  .chip{padding:5px 10px}
+  .chip b{font-size:1.15rem}
+  .roles{gap:8px;margin-bottom:12px}
+  .role{padding:12px 8px}
+  .role .ri{font-size:1.9rem}
+  .role b{font-size:1.2rem}
+  .rulelist{margin:0 0 10px;line-height:1.5;font-size:.92rem}
+  .ptn{margin:10px 0 4px;padding:12px}
+  .ptx{gap:6px;padding:8px}
+  .ptx .pz{font-size:1.6rem}
+  .ptx .pp,.ptx .pk{font-size:.95rem}
+  .tbar{margin-top:8px}
+  .clock{font-size:2rem}
+  .ask{padding-top:16px}
+  .askl{font-size:.9rem;margin-bottom:4px}
+  .askq{font-size:1.5rem}
+  .zone{padding:10px 0 4px}
+  .mic{width:80px;height:80px;font-size:2rem;margin:8px auto 4px}
+  .sent{padding:10px 12px}
+  .sent .zh{font-size:1.3rem}
+  .stamp{width:116px;height:116px;margin:4px auto 10px}
+  .stamp b{font-size:2.5rem}
+  .results li{padding:8px 0}
+  .wordcard{margin-top:10px}
+  .wtabs{margin-bottom:10px}
+  .wtabs button{padding:6px 4px;font-size:.85rem}
+  .wlist{gap:6px;margin-bottom:12px}
+  .wlist li{padding:8px 10px}
+  .wlist .whz{font-size:1.35rem}
+  .wlist .wpy{font-size:1.1rem}
+  .rulebox{padding:10px 12px;margin-bottom:12px;font-size:.85rem}
+  .rulebox ol{line-height:1.55}
+  .wq{margin:2px 0 10px;gap:4px}
+  .whz.big{font-size:2.5rem}
+  .pyin{padding:10px 12px;font-size:1.35rem}
+  .tones{gap:6px;margin:8px 0 4px}
+  .tbn span{font-size:1.25rem}
+  .tiph{font-size:.75rem}
+}
+
+/* ---- 휴대폰 가로: 높이가 낮으니 옆으로 넓게 쓰기 ---- */
+@media (orientation:landscape) and (max-height:520px){
+  body{font-size:15px}
+  .wrap{max-width:860px;padding-block:6px 16px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  header{margin:0 2px 6px}
+  header h1{font-size:1.05rem}
+  .track{margin-bottom:8px}
+  .track button{padding-top:3px;font-size:.75rem}
+  .panel{padding:12px 16px;border-radius:14px}
+  .panel.tall{min-height:0}
+  .lead{margin:0 0 8px;font-size:.88rem}
+  .mean{font-size:1.1rem;margin:0 0 8px}
+  .bar{margin-bottom:8px}
+  .sitbar{padding:4px 10px;margin:0 0 8px;font-size:.82rem}
+  .sits{grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:8px}
+  .slip{padding:8px 4px;gap:0}
+  .slip .food{font-size:.9rem}
+  .slip .price{font-size:1.05rem}
+  .tools{margin:4px 0 8px}
+  .dlg2{grid-template-columns:1fr 1fr;gap:6px;margin-bottom:10px}
+  .ln{padding:6px 10px}
+  .ln .zh{font-size:1.05rem}
+  .keys{grid-template-columns:1fr 1fr;gap:4px}
+  .keys li{padding:5px 10px}
+  .q-kr{font-size:1.2rem;margin:6px 0}
+  .opts{grid-template-columns:1fr 1fr;gap:6px}
+  .opt{padding:8px 10px}
+  .afterbox{margin-top:8px;padding:8px 10px}
+  .btn{padding:8px 16px;font-size:.92rem}
+  .scene{margin:2px 0 8px}
+  .slots{min-height:50px;padding:6px;margin-bottom:8px}
+  .pool{min-height:40px;margin-bottom:8px}
+  .roles{grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:8px}
+  .role.full{grid-column:auto}
+  .role{padding:8px 6px}
+  .role .ri{font-size:1.5rem}
+  .role b{font-size:1.05rem}
+  .rulelist{margin:0 0 8px;font-size:.85rem;line-height:1.45}
+  .ptn{margin:8px 0 2px;padding:8px 12px}
+  .ptx{gap:4px;padding:4px}
+  .ptx .pz{font-size:1.45rem}
+  .nextb{margin-top:4px}
+  .tbar{margin-top:4px;height:6px}
+  .clock{font-size:1.6rem}
+  .ask{padding-top:6px}
+  .askl{font-size:.85rem;margin-bottom:2px}
+  .askq{font-size:1.35rem}
+  .zone{padding:6px 0 0}
+  .mic{width:60px;height:60px;font-size:1.6rem;margin:4px auto 2px}
+  .sent{padding:6px 10px;margin-top:6px}
+  .sent .zh{font-size:1.15rem}
+  .selfg .btn{padding:6px 2px}
+  .stamp{width:96px;height:96px;margin:2px auto 8px}
+  .stamp b{font-size:2.1rem}
+  .results{display:grid;grid-template-columns:1fr 1fr;column-gap:16px}
+  .wordcard{margin-top:8px}
+  .wtabs{margin-bottom:8px}
+  .wtabs button{padding:5px 4px}
+  .wlist{grid-template-columns:1fr 1fr;gap:6px}
+  .wlist li{padding:6px 10px}
+  .wlist .whz{font-size:1.25rem}
+  .rulebox{padding:8px 12px;margin-bottom:8px;font-size:.82rem}
+  .wq{flex-direction:row;flex-wrap:wrap;justify-content:center;gap:4px 12px;margin:0 0 8px}
+  .whz.big{font-size:2rem}
+  .wq .whint{flex-basis:100%;text-align:center}
+  .pyin{padding:8px 12px;font-size:1.25rem}
+  .tones{margin:6px 0 2px;gap:6px}
+  .tbn{padding:3px 0}
+  .tbn span{font-size:1.1rem}
+}
 </style>
+</head>
+<body>
 <div class="wrap">
   <header><h1>🍔 음식 주문</h1><span><span id="best"></span> <button class="say" id="chg">상황 바꾸기</button></span></header>
   <ol class="track" id="track"></ol>
@@ -618,8 +771,9 @@ function runTest(role){
         <button class="btn primary nextb" id="nb">다음 →</button>
       </div>
     </section>`;
-    const play=()=>{speak(l.hz);pc.classList.add("played");setTimeout(()=>pc.classList.remove("played"),700)};
-    pc.onclick=play;play();
+    const pcEl=document.getElementById("pc");
+    const play=()=>{speak(l.hz);pcEl.classList.add("played");setTimeout(()=>pcEl.classList.remove("played"),700)};
+    pcEl.onclick=play;play();
     nb.onclick=()=>{stopAudio();idx++;next()};
     nb.focus({preventScroll:true});
   }
@@ -981,3 +1135,5 @@ function localGrade(w,saidText){
 document.getElementById("chg").onclick=()=>pick();
 pick();
 </script>
+</body>
+</html>
